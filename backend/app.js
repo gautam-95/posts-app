@@ -7,7 +7,6 @@ const userRoutes = require('./routes/users');
 
 const app = express();
 
-//'mongodb+srv://gautam:95VW3NQPtgDtzmUI@cluster0-xqqza.mongodb.net/test?retryWrites=true&w=majority'
 mongoose.connect('mongodb://localhost:27017/meanPosts')
     .then(() => {
         console.log('Connected To Database!')
